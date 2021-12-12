@@ -53,7 +53,7 @@ const App = () => {
       className="cta-button connect-wallet-button"
       onClick={connectWallet}
     >
-      Connect to Phantom Wallet
+      Connect Solana Wallet
     </button>
   );
 
@@ -69,10 +69,9 @@ const App = () => {
     <div
       className="App"
       style={{
-        // backgroundImage: { backgroundImage },
         backgroundImage: `url(${backgroundImage})`,
-        backgroundColor: "red",
         backgroundSize: "cover",
+        backgroundColor: "black",
       }}
     >
       <div className="container">
