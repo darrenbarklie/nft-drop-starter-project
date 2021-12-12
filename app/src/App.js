@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import CandyMachine from "./CandyMachine";
 import "./App.css";
 import twitterLogo from "./assets/twitter-logo.svg";
+import backgroundImage from "./assets/background.png";
 
 // Constants
 const TWITTER_HANDLE = "_buildspace";
@@ -65,11 +66,19 @@ const App = () => {
   }, []);
 
   return (
-    <div className="App">
+    <div
+      className="App"
+      style={{
+        // backgroundImage: { backgroundImage },
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundColor: "red",
+        backgroundSize: "cover",
+      }}
+    >
       <div className="container">
         <div className="header-container">
-          <p className="header">🍭 Candy Drop</p>
-          <p className="sub-text">NFT drop machine with fair mint</p>
+          <p className="header">FFVIII DROP</p>
+          <p className="sub-text">Mint your FFav</p>
           {!walletAddress && renderNotConnectedContainer()}
         </div>
 
@@ -80,10 +89,17 @@ const App = () => {
           <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
           <a
             className="footer-text"
+            href="https://twitter.com/dazdotdev"
+            target="_blank"
+            rel="noreferrer"
+          >{`built by @dazdotdev`}</a>
+          <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
+          <a
+            className="footer-text"
             href={TWITTER_LINK}
             target="_blank"
             rel="noreferrer"
-          >{`built on @${TWITTER_HANDLE}`}</a>
+          >{`built with @${TWITTER_HANDLE}`}</a>
         </div>
       </div>
     </div>
