@@ -1,0 +1,19 @@
+{
+  "name": "FFVIII_Squall",
+  "symbol": "",
+  "image": "0.png",
+  "properties": {
+    "files": [
+      {
+        "uri": "0.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": [
+      {
+        "address": "EW7VaNdq1FQDGMEZqTnpsvFpMdGjptne8hc4ZR1byQ9a",
+        "share": 100
+      }
+    ]
+  }
+}
